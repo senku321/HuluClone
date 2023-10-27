@@ -1,0 +1,351 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+body {
+  font-family: "Rubik", sans-serif;
+  background: #000;
+  color: #fff;
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+h4 {
+  color: #00ed82;
+  text-transform: uppercase;
+}
+img {
+  width: 100%;
+}
+header {
+  height: 500px;
+  background: url(./img/header.jpg) no-repeat center center / cover;
+}
+
+.login {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 40px;
+}
+.login button {
+  background: none;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+.header .logo {
+  width: 270px;
+  margin: 15px;
+}
+.header-text {
+  display: flex;
+  flex-direction: column;
+  /* height: 100%; */
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+.header-text .text1 {
+  font-size: 12px;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+.header-text .text3 {
+  font-size: 23px;
+  font-weight: bold;
+}
+.header-text .legal-text {
+  padding: 15px 0 20px 0;
+  font-size: 18px;
+  font-weight: 400;
+}
+.header-text button {
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 20px 32px;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  line-height: 14px;
+  color: #333;
+  cursor: pointer;
+}
+.xs {
+  font-size: 9px;
+  color: #ccc;
+  margin-top: 15px;
+}
+
+.login button:hover {
+  color: rgb(212, 207, 207);
+}
+.header-text button:hover {
+  opacity: 0.8;
+}
+
+/* sub header */
+
+.sub-header {
+  display: grid;
+  grid-template-columns: 2fr 4fr 2fr;
+  gap: 40px;
+  /* height: 200px; */
+  align-items: center;
+  padding: 30px 40px;
+  background: linear-gradient(
+    318.68deg,
+    #0f495c 0%,
+    #0d3640 49.72%,
+    #08141f 100%
+  );
+}
+.sub-header .text1 {
+  font-size: 14px;
+}
+.sub-header .text2 {
+  font-size: 28px;
+  font-weight: 200;
+}
+.sub-header button {
+  font-size: 20px;
+  text-transform: uppercase;
+  background: none;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  padding: 18px;
+  text-align: start;
+  color: #fff;
+  font-weight: bold;
+}
+.sub-header > div:last-of-type {
+  justify-self: start;
+  align-self: end;
+}
+.sub-header .sub-link {
+  text-align: center;
+  display: block;
+  color: #ccc;
+  font-size: 15px;
+}
+.text a {
+  color: #ccc;
+  font-size: 15px;
+}
+
+/* categories */
+
+.categories {
+  padding: 20px 50px;
+}
+
+.categories .text {
+  text-align: center;
+}
+.xl {
+  font-size: 70px;
+  text-transform: uppercase;
+  line-height: 1.4;
+  font-weight: bold;
+}
+
+.categories .text h3 {
+  font-size: 25px;
+  font-weight: 300;
+}
+
+.categories .covers > div {
+  height: 500px;
+  width: 300px;
+  position: relative;
+}
+.categories .cover-grad {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+      156.82deg,
+      rgba(0, 0, 0, 0.6) 4.58%,
+      rgba(0, 0, 0, 0) 69.61%
+    ),
+    linear-gradient(24.5deg, rgba(0, 0, 0, 0.2) 4.71%, rgba(0, 0, 0, 0) 71.49%);
+}
+
+.categories .covers {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 10px;
+  align-content: center;
+  justify-items: center;
+  margin-top: 30px;
+}
+.categories .cover-text {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  text-align: left;
+}
+
+.categories .cover-1 {
+  background: url(./img/cover-1.jpg) no-repeat center center/cover;
+}
+.categories .cover-2 {
+  background: url(./img/cover-2.jpg) no-repeat center center/cover;
+}
+.categories .cover-3 {
+  background: url(./img/cover-3.jpg) no-repeat center center/cover;
+}
+.categories .cover-4 {
+  background: url(./img/cover-4.jpg) no-repeat center center/cover;
+}
+/* live-tv */
+
+.live-tv {
+  border: 5px solid #00ed82;
+  border-radius: 19px;
+  margin: 50px;
+  padding: 80px 50px;
+  text-align: center;
+  height: 650px;
+}
+
+.live-tv a {
+  text-transform: uppercase;
+  color: #fff;
+  display: block;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+/* live sports */
+
+.live-sports {
+  height: 800px;
+  background: url(./img/live-sports.jpg) no-repeat center center / cover;
+  position: relative;
+}
+
+.live-sports-content {
+  position: absolute;
+  top: 160px;
+  left: 100px;
+  max-width: 550px;
+}
+
+.logos {
+  width: 300px;
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logos > div {
+  background: url(/img/network-logo-bg.png) no-repeat center center / cover;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logos img {
+  width: 40px;
+}
+
+.modal {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.6);
+}
+.modal-content {
+  width: 400px;
+  margin: 10% auto;
+  background: #fff;
+  color: #000;
+  position: relative;
+}
+.modal-body {
+  padding: 50px;
+  text-transform: uppercase;
+}
+.modal-body div {
+  padding: 0 0 30px 0;
+}
+.modal-body > div:first-of-type {
+  text-transform: capitalize;
+  font-size: 25px;
+  font-weight: bold;
+}
+.form input {
+  display: block;
+  border: 2px solid #333;
+  width: 100%;
+  height: 35px;
+  border-radius: 10px;
+  outline: none;
+  padding: 10px;
+}
+
+.form #submit {
+  background: #000;
+  color: #fff;
+  text-transform: uppercase;
+  height: 50px;
+  margin-top: 30px;
+}
+.modal-content > div:last-of-type {
+  height: 50px;
+  text-align: center;
+  padding: 10px;
+  background: rgba(104, 100, 100, 0.356);
+}
+.close-btn {
+  height: 23px;
+  width: 23px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  color: #000;
+}
+
+@media screen and (max-width: 700px) {
+  .header .logo {
+    margin: 10px;
+  }
+  .header-text {
+    text-align: center;
+    padding: 0 15px;
+  }
+  .legal-text {
+    display: none;
+  }
+  .sub-header {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  .sub-header img {
+    margin: auto;
+  }
+  .sub-header .text {
+    text-align: center;
+  }
+  .sub-header .text2 {
+    font-size: 22px;
+  }
+  .sub-header > div:last-of-type {
+    justify-self: center;
+  }
+}
